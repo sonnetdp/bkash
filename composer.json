@@ -1,0 +1,28 @@
+{
+    "name": "sonnetdp/bkash",
+    "description": "This is a test bKash payment gateway package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sonnet",
+            "email": "sonnetdp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sonnetdp\\Bkash\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sonnetdp\\Bkash\\BkashServiceProvider"
+            ]
+        }
+    },
+}
